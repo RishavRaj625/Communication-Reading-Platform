@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Content</title>
+    <link rel="stylesheet" href="./CSS/add_content.css">
+</head>
+<body>
+
+    <h2>Add Your Reading Content</h2>
+    <div class="container">
+        <div class="info-box">
+            📝 Add any text you want to practice reading. After saving, go to the Reading Page to practice with auto-scrolling and text-to-speech features.
+        </div>
+        
+        <textarea id="userContent" placeholder="Enter your content here..."></textarea>
+        
+        <div class="controls">
+            <button class="save" onclick="saveContent()">Save Content</button>
+            <button class="read" onclick="window.location.href='index.html'">Go to Reading Page</button>
+            <button class="clear" onclick="clearContent()">Clear Text</button>
+            <button class="sample" onclick="loadSample()">Load Sample</button>
+            <button class="toggle-dark" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </div>
+
+    <script src="./JS/add_content.js"></script>
+
+</body>
+</html>

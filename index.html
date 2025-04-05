@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Content</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <h2>Reading Page</h2>
+    <div class="container">
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="content" id="content">
+                <p>Loading your content...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    
+    <div class="controls">
+        <button class="start" onclick="startScroll()">Start</button>
+        <button class="pause" onclick="pauseScroll()">Pause</button>
+        <button class="more" onclick="toggleMoreOptions()">More ⬇</button>
+        <button class="back" onclick="window.location.href='add_content.html'">Add Content</button>
+    </div>
+
+    <div class="more-options" id="more-options">
+        <button class="speak" onclick="speakText()">🔊 Read Aloud</button>
+        <button class="speak-selected" onclick="speakHighlightedText()">🔊 Read Highlighted</button>
+        <button class="pause-speak" onclick="pauseSpeech()">⏸ Pause</button>
+        <button class="stop-speak" onclick="stopSpeech()">⏹ Stop</button>
+        <button class="toggle-dark" onclick="toggleDarkMode()">Dark Mode</button>
+        <button class="speed-control" onclick="changeSpeed()">Speed: Medium</button>
+        <button class="clear" onclick="clearContent()">🗑 Clear</button>
+    </div>
+    
+    <div class="motto-toggle">
+        <button class="motto-btn" onclick="toggleMotto()">📘 Show Motto</button>
+    </div>
+    <div id="motto-content" class="motto-section" style="display: none;"></div>
+
+    <script src="./JS/script.js"></script>
+
+</body>
+</html>
