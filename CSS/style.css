@@ -1,0 +1,279 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 680px;
+            height: 60vh;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            line-height: 1.8;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        /* Add proper paragraph spacing */
+        .content p {
+            margin-bottom: 16px;
+            text-indent: 1em;
+        }
+
+        .content h1,
+        .content h2,
+        .content h3,
+        .content h4,
+        .content h5 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 18px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .start {
+            background: #28a745;
+            color: white;
+        }
+
+        .pause {
+            background: #dc3545;
+            color: white;
+        }
+
+        .more {
+            background: #007bff;
+            color: white;
+        }
+
+        .back {
+            background: #ff9800;
+            color: white;
+        }
+
+        /* More options */
+        .more-options {
+            display: none;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .speak {
+            background: #8e44ad;
+            color: white;
+        }
+
+        .speak-selected {
+            background: #9b59b6;
+            color: white;
+        }
+
+        .pause-speak,
+        .stop-speak {
+            background: #6c757d;
+            color: white;
+            display: none;
+        }
+
+        .toggle-dark {
+            background: #343a40;
+            color: white;
+        }
+
+        .speed-control {
+            background: #009688;
+            color: white;
+        }
+
+        .clear {
+            background: #ff5722;
+            color: white;
+        }
+
+        /* Dark mode */
+        .dark-mode {
+            background: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .container {
+            background: #1e1e1e;
+            color: #e0e0e0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode button {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Scrollbar */
+        .content-wrapper::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-thumb {
+            background: #b8b8b8;
+            border-radius: 10px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-thumb:hover {
+            background: #888;
+        }
+
+        .dark-mode .content-wrapper::-webkit-scrollbar-track {
+            background: #2a2a2a;
+        }
+
+        .dark-mode .content-wrapper::-webkit-scrollbar-thumb {
+            background: #555;
+        }
+
+        /* Motto section */
+        .motto-toggle {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .motto-btn {
+            background-color: #6c63ff;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .motto-btn:hover {
+            background-color: #554fd4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .motto-section {
+            background: #f0f8ff;
+            border-left: 5px solid #007BFF;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 680px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode .motto-section {
+            background: #2a2a2a;
+            border-left: 5px solid #3a8eff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .motto-section p {
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .dark-mode .motto-section p {
+            color: #e0e0e0;
+        }
+
+        /* Progress indicator */
+        .progress-container {
+            width: 90%;
+            max-width: 680px;
+            height: 6px;
+            background: #ddd;
+            margin-top: 15px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background: #4CAF50;
+            transition: width 0.3s ease;
+        }
+
+        .dark-mode .progress-container {
+            background: #444;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .container {
+                height: 50vh;
+                width: 95%;
+            }
+
+            button {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .motto-section {
+                padding: 15px;
+            }
+        }
