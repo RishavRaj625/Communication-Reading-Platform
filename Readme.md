@@ -43,4 +43,4 @@ Optimized for all screen sizes including mobile, tablet, and desktop.
 Buttons and layout adapt smoothly for small screens.
 
 🎯 Purpose & Impact:
-This platform is ideal for students, professionals, or anyone aiming to boost their English fluency through focused reading and listening. By combining visual engagement, voice support, and user interaction, it makes practicing English more accessible, enjoyable, and effective.
+This platform is ideal for students, professionals, or anyone aiming to boost their English fluency through focused reading and listening. By combining visual engagement, voice support, and user interaction, it makes practicing English more accessible, enjoyable, and effective...
